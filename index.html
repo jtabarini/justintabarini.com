@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin Tabarini · Marketing Analytics</title>
+  <meta name="description" content="Justin Tabarini — marketing analytics and measurement in New York. Incrementality, geo tests, and a lot of good dinners.">
+  <meta property="og:title" content="Justin Tabarini · Marketing Analytics">
+  <meta property="og:description" content="Marketing measurement nerd in New York. Incrementality, geo tests, MMTs.">
+  <meta property="og:image" content="https://justintabarini.com/assets/photos/headshot.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231f3a5f'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='white' font-family='Georgia,serif'>JT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>if (/^(localhost|127\.0\.0\.1|)$/.test(location.hostname)) document.documentElement.classList.add("is-local");</script>
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__name" href="#top">Justin Tabarini</a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#mmt">MMT tool</a>
+      <a href="#life">Life</a>
+      <a href="#contact">Say hi</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- 1. About -->
+    <section class="hero" id="about">
+      <figure class="hero__photo photo" data-label="headshot.jpg">
+        <img src="assets/photos/headshot.jpg" alt="Justin smiling in front of a waterfall" onerror="this.parentElement.classList.add('photo--empty');this.remove()">
+      </figure>
+      <div class="hero__text">
+        <p class="eyebrow">Marketing analytics · New York</p>
+        <h1>Hey, I'm Justin <span class="wave" aria-hidden="true">👋</span></h1>
+        <p>
+          I'm a marketing analytics guy based in New York, and the question I can't stop asking is
+          <em>"did that ad actually cause that sale?"</em>
+        </p>
+        <p>
+          My path here wasn't exactly a straight line. I studied mechanical engineering at UT Austin,
+          spent a year checking safety margins on a nuclear test reactor (yes, really), and co-founded a
+          boba tea vending machine startup on the side. After a stint wrangling logistics data at Goodman,
+          I moved to New York and joined Quip, where I got to run a $1.2M geo-holdout test, and that was
+          it for me. I was hooked on incrementality.
+        </p>
+        <p>
+          Since then I've been chasing that question at Magic Spoon and now Athena Club, where I work on
+          marketing measurement: geo tests, MMTs, LTV models, and figuring out what's really driving sales
+          across DTC and retail. Somewhere in there I also picked up a master's in analytics from Georgia
+          Tech and built my own geo-testing tool (more on that below).
+        </p>
+        <p>
+          When I'm not staring at lift charts, I'm usually eating my way through New York, from tiny
+          neighborhood spots to the place everyone's been trying to get a reservation at, or catching a
+          live show. A good dinner followed by a concert is pretty much my perfect night.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Say hi</a>
+          <a class="btn" href="https://www.linkedin.com/in/justin-tabarini" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Logos -->
+    <section class="work" id="work">
+      <h2 class="section-title">Where I've worked</h2>
+      <ul class="logos">
+        <li class="logo"><img src="assets/logos/quip.svg" alt="Quip" class="logo--quip"></li>
+        <li class="logo"><img src="assets/logos/magic-spoon.svg" alt="Magic Spoon"></li>
+        <li class="logo"><img src="assets/logos/athena-club.svg" alt="Athena Club"></li>
+      </ul>
+    </section>
+
+    <!-- 3. MMT tool -->
+    <section class="mmt" id="mmt">
+      <div class="mmt__text">
+        <p class="eyebrow">Side project</p>
+        <h2>The MMT Tool</h2>
+        <p>
+          Matched market tests are one of the best ways to measure what marketing actually does, but
+          running one usually means a lot of R scripts and a lot of spreadsheets. So I built a tool for it.
+        </p>
+        <p>
+          The MMT Tool is a web app wrapped around <strong>GeoLift</strong>, Meta's open-source library
+          for geo-based lift testing. You upload sales by zip code, and it walks you through the whole
+          test: pick your markets, run a power analysis, lock the design, then read out the lift and
+          iROAS by channel once the test is done.
+        </p>
+        <ul class="ticks">
+          <li>Market selection and power analysis built on GeoLift's synthetic control</li>
+          <li>Holdout and growth tests, with spend tracked for test vs. control</li>
+          <li>Readouts by channel: lift, confidence intervals, and incremental ROAS</li>
+        </ul>
+        <div class="mmt__cta">
+          <a class="btn btn--primary" href="https://geolift.justintabarini.com/demo">Try the demo ↗</a>
+          <span class="fine">Signs you in as an analyst at <strong>JT Electronics</strong>, a made-up company with made-up data. No password, and it's read-only, so click around.</span>
+        </div>
+      </div>
+      <figure class="mmt__shot photo" data-label="mmt-screenshot.png">
+        <img src="assets/photos/mmt-screenshot.png" alt="Screenshot of the MMT Tool showing a test readout" onerror="this.parentElement.classList.add('photo--empty');this.remove()">
+      </figure>
+    </section>
+
+    <!-- 4. Photos -->
+    <section class="life" id="life">
+      <h2 class="section-title">Off the clock</h2>
+      <div class="gallery">
+        <figure class="photo" data-label="machu-picchu.jpg">
+          <img src="assets/photos/machu-picchu.jpg" alt="Justin and a friend at Machu Picchu" loading="lazy" onerror="this.parentElement.classList.add('photo--empty');this.remove()">
+          <figcaption>Made it to Machu Picchu</figcaption>
+        </figure>
+        <figure class="photo" data-label="tuscany.jpg">
+          <img src="assets/photos/tuscany.jpg" alt="Justin with a spritz at Borgo San Vincenzo in Italy" loading="lazy" onerror="this.parentElement.classList.add('photo--empty');this.remove()">
+          <figcaption>Aperitivo hour in Italy</figcaption>
+        </figure>
+        <figure class="photo" data-label="concert.jpg">
+          <img src="assets/photos/concert.jpg" alt="Justin at a live concert" loading="lazy" onerror="this.parentElement.classList.add('photo--empty');this.remove()">
+          <figcaption>Somewhere near the front row</figcaption>
+        </figure>
+        <figure class="photo" data-label="nyc-dinner.jpg">
+          <img src="assets/photos/nyc-dinner.jpg" alt="Justin out to dinner in New York" loading="lazy" onerror="this.parentElement.classList.add('photo--empty');this.remove()">
+          <figcaption>Another New York dinner</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. Contact -->
+    <section class="contact" id="contact">
+      <h2>Want to talk measurement?</h2>
+      <p>Geo tests, MMM vs. MMT, a restaurant I should try, or a show I shouldn't miss. I'm happy to chat about any of it.</p>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="https://www.linkedin.com/in/justin-tabarini" target="_blank" rel="noopener">Message me on LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year">2026</span> Justin Tabarini · New York</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
